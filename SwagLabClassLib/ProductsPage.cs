@@ -196,6 +196,10 @@ namespace SwagLabClassLib
           SelectElement productsfilter = new SelectElement((_FilterDropdown));
            productsfilter.SelectByValue("lohi");
         }
+        public String getPageTitle()
+        {
+            return _driver.Title;
+        }
          
 
     }

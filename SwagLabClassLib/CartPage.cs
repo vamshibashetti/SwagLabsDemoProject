@@ -36,7 +36,9 @@ namespace SwagLabClassLib
         //list of elements
         [FindsBy(How= How.ClassName, Using="inventory_item_name")]
         private  IList<IWebElement> _SelectedItemslist;
-
+         //title
+          [FindsBy(How= How.XPath, Using="//span[@class='title']")]
+        private IWebElement _carttitle;
         
         public CartPage(IWebDriver driver)
         {
@@ -80,6 +82,10 @@ namespace SwagLabClassLib
         {
          int itemscount =_SelectedItemslist.Count();         
           return itemscount;
+        }
+        public String cartPageTitle()
+        {
+            return _carttitle.Text;
         }
   
         

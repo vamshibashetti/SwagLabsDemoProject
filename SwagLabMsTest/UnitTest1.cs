@@ -171,6 +171,34 @@ namespace SwagLabMsTest
 
         }
         
+         [DataTestMethod]
+    
+        [DataRow("standard_user","secret_sauce","vamshi","bashetti","500049")]
+        public void verifying_Pages_Title(string uname,string upassword,string fname,string lname,string pin){
+           
+           LogInPage log =new LogInPage(driver);
+           string actualoginltitle = log.getPageTitle();
+           string expectedlogintitle="Swag Labs";
+           Assert.AreEqual(expectedlogintitle,actualoginltitle,"title doesnot match");
+           var productspage =log.loginMethod(uname,upassword);
+           string actualtitle = productspage.productsTitleverify();
+           string expectedtitle="PRODUCTS";
+           Assert.AreEqual(expectedtitle,actualtitle,"title doesnot match");
+
+           var cartpage = productspage.navigatetocart();
+           Thread.Sleep(5000); 
+           string actualctitle = cartpage.cartPageTitle();
+           string expectedctitle="YOUR CART";
+           Assert.AreEqual(expectedctitle,actualctitle,"title doesnot match");
+           var checkoutpage =cartpage.checkoutbtn();
+           var checkoutcomplete = checkoutpage.checkoutFinish(fname,lname,pin);
+           checkoutcomplete.backtohomebtn();
+           productspage.menubtn();
+           productspage.logoutlink();
+        
+
+        }
+        
 
 
         [TestCleanup]

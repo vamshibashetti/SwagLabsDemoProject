@@ -71,6 +71,10 @@ namespace SwagLabClassLib
             string actualerror=_errormsg.Text;
             return actualerror;
         }
+         public String getPageTitle()
+        {
+            return _driver.Title;
+        }
 
     }
     }
