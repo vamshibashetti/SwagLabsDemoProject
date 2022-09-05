@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "au21omCHR2oo9WZ3WtnPHXyLdYzxc9BLRYkSVoiIs+O3Sxv0VFk//dMrXz5siMzWu8HwTXhhsJuibgyHGfzc4g==",
+  "dgSpecHash": "ICPNGtn8HprJx5KgOm6YPUm8PhnyjJ9SeYrimjaGUd7G53gxw5FIu2LGJqCC0gijVcOs7PSKR7/w4r6I1m5z5A==",
   "success": true,
-  "projectFilePath": "C:\\Root Folder\\SwagLabsDemoProject\\SwagLabMsTest\\SwagLabMsTest.csproj",
+  "projectFilePath": "C:\\RootFolder1\\SwagLabsDemoProject\\SwagLabMsTest\\SwagLabMsTest.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\E009074\\.nuget\\packages\\coverlet.collector\\1.2.0\\coverlet.collector.1.2.0.nupkg.sha512",
     "C:\\Users\\E009074\\.nuget\\packages\\dotnetseleniumextras.pageobjects\\3.11.0\\dotnetseleniumextras.pageobjects.3.11.0.nupkg.sha512",

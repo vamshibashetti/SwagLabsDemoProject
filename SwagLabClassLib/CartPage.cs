@@ -33,6 +33,9 @@ namespace SwagLabClassLib
         private IWebElement _RemoveBikeLight;
         [FindsBy(How= How.XPath, Using="//button[@id='remove-sauce-labs-backpack']")]
         private IWebElement _RemoveBackpack;
+        //list of elements
+        [FindsBy(How= How.ClassName, Using="inventory_item_name")]
+        private  IList<IWebElement> _SelectedItemslist;
 
         
         public CartPage(IWebDriver driver)

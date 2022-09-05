@@ -74,7 +74,7 @@ namespace SwagLabClassLib
         private IWebElement _RedTshirt;
 
         //FiltersDropdown
-        [FindsBy(How= How.Id, Using="//select[@class='product_sort_container']")]
+        [FindsBy(How= How.XPath, Using="//select[@class='product_sort_container']")]
 
         private IWebElement _FilterDropdown;
 
@@ -89,7 +89,7 @@ namespace SwagLabClassLib
           
           _driver =driver; 
           Wait = new WebDriverWait(driver,TimeSpan.FromSeconds(20));
-          SelectElement productsfilter = new SelectElement((_FilterDropdown));
+      
         PageFactory.InitElements(_driver,this);
         }
 
@@ -192,7 +192,9 @@ namespace SwagLabClassLib
 
         public void FiltersDropdown()
         {
-            productsfilter.SelectByText("Price (low to high)");
+             Wait.Until(SeleniumExtras.WaitHelpers.ExpectedConditions.ElementToBeClickable( _FilterDropdown));
+          SelectElement productsfilter = new SelectElement((_FilterDropdown));
+           productsfilter.SelectByValue("lohi");
         }
          
 

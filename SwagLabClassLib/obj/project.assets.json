@@ -453,11 +453,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Root Folder\\SwagLabsDemoProject\\SwagLabClassLib\\SwagLabClassLib.csproj",
+      "projectUniqueName": "C:\\RootFolder1\\SwagLabsDemoProject\\SwagLabClassLib\\SwagLabClassLib.csproj",
       "projectName": "SwagLabClassLib",
-      "projectPath": "C:\\Root Folder\\SwagLabsDemoProject\\SwagLabClassLib\\SwagLabClassLib.csproj",
+      "projectPath": "C:\\RootFolder1\\SwagLabsDemoProject\\SwagLabClassLib\\SwagLabClassLib.csproj",
       "packagesPath": "C:\\Users\\E009074\\.nuget\\packages\\",
-      "outputPath": "C:\\Root Folder\\SwagLabsDemoProject\\SwagLabClassLib\\obj\\",
+      "outputPath": "C:\\RootFolder1\\SwagLabsDemoProject\\SwagLabClassLib\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\E009074\\AppData\\Roaming\\NuGet\\NuGet.Config"

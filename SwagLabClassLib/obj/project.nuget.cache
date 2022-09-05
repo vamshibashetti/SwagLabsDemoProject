@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "SyvpMdHDtVkQuxe4ZXFPtIvCht7uSnod53roSx4SGTammey263hbTZSPiE5TTWNEkFRZcInFO15k9P98S55Lgw==",
+  "dgSpecHash": "BATWGXHXjQZvAX70m1CNtJeNftDYHnc2UWyxEoiRQ7bU8KerUEUHJjflccfJz2TTTMvu8I2i0BypWG57a/bL7A==",
   "success": true,
-  "projectFilePath": "C:\\Root Folder\\SwagLabsDemoProject\\SwagLabClassLib\\SwagLabClassLib.csproj",
+  "projectFilePath": "C:\\RootFolder1\\SwagLabsDemoProject\\SwagLabClassLib\\SwagLabClassLib.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\E009074\\.nuget\\packages\\coverlet.collector\\1.2.0\\coverlet.collector.1.2.0.nupkg.sha512",
     "C:\\Users\\E009074\\.nuget\\packages\\dotnetseleniumextras.pageobjects\\3.11.0\\dotnetseleniumextras.pageobjects.3.11.0.nupkg.sha512",

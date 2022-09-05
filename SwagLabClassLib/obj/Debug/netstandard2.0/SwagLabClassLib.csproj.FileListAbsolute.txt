@@ -7,3 +7,12 @@ C:\Root Folder\SwagLabsDemoProject\SwagLabClassLib\bin\Debug\netstandard2.0\Swag
 C:\Root Folder\SwagLabsDemoProject\SwagLabClassLib\bin\Debug\netstandard2.0\SwagLabClassLib.pdb
 C:\Root Folder\SwagLabsDemoProject\SwagLabClassLib\obj\Debug\netstandard2.0\SwagLabClassLib.dll
 C:\Root Folder\SwagLabsDemoProject\SwagLabClassLib\obj\Debug\netstandard2.0\SwagLabClassLib.pdb
+C:\RootFolder1\SwagLabsDemoProject\SwagLabClassLib\obj\Debug\netstandard2.0\SwagLabClassLib.csprojAssemblyReference.cache
+C:\RootFolder1\SwagLabsDemoProject\SwagLabClassLib\obj\Debug\netstandard2.0\SwagLabClassLib.AssemblyInfoInputs.cache
+C:\RootFolder1\SwagLabsDemoProject\SwagLabClassLib\obj\Debug\netstandard2.0\SwagLabClassLib.AssemblyInfo.cs
+C:\RootFolder1\SwagLabsDemoProject\SwagLabClassLib\obj\Debug\netstandard2.0\SwagLabClassLib.csproj.CoreCompileInputs.cache
+C:\RootFolder1\SwagLabsDemoProject\SwagLabClassLib\obj\Debug\netstandard2.0\SwagLabClassLib.dll
+C:\RootFolder1\SwagLabsDemoProject\SwagLabClassLib\obj\Debug\netstandard2.0\SwagLabClassLib.pdb
+C:\RootFolder1\SwagLabsDemoProject\SwagLabClassLib\bin\Debug\netstandard2.0\SwagLabClassLib.deps.json
+C:\RootFolder1\SwagLabsDemoProject\SwagLabClassLib\bin\Debug\netstandard2.0\SwagLabClassLib.dll
+C:\RootFolder1\SwagLabsDemoProject\SwagLabClassLib\bin\Debug\netstandard2.0\SwagLabClassLib.pdb

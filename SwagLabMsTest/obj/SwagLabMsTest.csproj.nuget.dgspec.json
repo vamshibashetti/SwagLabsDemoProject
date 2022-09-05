@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Root Folder\\SwagLabsDemoProject\\SwagLabMsTest\\SwagLabMsTest.csproj": {}
+    "C:\\RootFolder1\\SwagLabsDemoProject\\SwagLabMsTest\\SwagLabMsTest.csproj": {}
   },
   "projects": {
-    "C:\\Root Folder\\SwagLabsDemoProject\\SwagLabClassLib\\SwagLabClassLib.csproj": {
+    "C:\\RootFolder1\\SwagLabsDemoProject\\SwagLabClassLib\\SwagLabClassLib.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Root Folder\\SwagLabsDemoProject\\SwagLabClassLib\\SwagLabClassLib.csproj",
+        "projectUniqueName": "C:\\RootFolder1\\SwagLabsDemoProject\\SwagLabClassLib\\SwagLabClassLib.csproj",
         "projectName": "SwagLabClassLib",
-        "projectPath": "C:\\Root Folder\\SwagLabsDemoProject\\SwagLabClassLib\\SwagLabClassLib.csproj",
+        "projectPath": "C:\\RootFolder1\\SwagLabsDemoProject\\SwagLabClassLib\\SwagLabClassLib.csproj",
         "packagesPath": "C:\\Users\\E009074\\.nuget\\packages\\",
-        "outputPath": "C:\\Root Folder\\SwagLabsDemoProject\\SwagLabClassLib\\obj\\",
+        "outputPath": "C:\\RootFolder1\\SwagLabsDemoProject\\SwagLabClassLib\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\E009074\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -89,14 +89,14 @@
         }
       }
     },
-    "C:\\Root Folder\\SwagLabsDemoProject\\SwagLabMsTest\\SwagLabMsTest.csproj": {
+    "C:\\RootFolder1\\SwagLabsDemoProject\\SwagLabMsTest\\SwagLabMsTest.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Root Folder\\SwagLabsDemoProject\\SwagLabMsTest\\SwagLabMsTest.csproj",
+        "projectUniqueName": "C:\\RootFolder1\\SwagLabsDemoProject\\SwagLabMsTest\\SwagLabMsTest.csproj",
         "projectName": "SwagLabMsTest",
-        "projectPath": "C:\\Root Folder\\SwagLabsDemoProject\\SwagLabMsTest\\SwagLabMsTest.csproj",
+        "projectPath": "C:\\RootFolder1\\SwagLabsDemoProject\\SwagLabMsTest\\SwagLabMsTest.csproj",
         "packagesPath": "C:\\Users\\E009074\\.nuget\\packages\\",
-        "outputPath": "C:\\Root Folder\\SwagLabsDemoProject\\SwagLabMsTest\\obj\\",
+        "outputPath": "C:\\RootFolder1\\SwagLabsDemoProject\\SwagLabMsTest\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\E009074\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -110,8 +110,8 @@
         "frameworks": {
           "netcoreapp3.1": {
             "projectReferences": {
-              "C:\\Root Folder\\SwagLabsDemoProject\\SwagLabClassLib\\SwagLabClassLib.csproj": {
-                "projectPath": "C:\\Root Folder\\SwagLabsDemoProject\\SwagLabClassLib\\SwagLabClassLib.csproj"
+              "C:\\RootFolder1\\SwagLabsDemoProject\\SwagLabClassLib\\SwagLabClassLib.csproj": {
+                "projectPath": "C:\\RootFolder1\\SwagLabsDemoProject\\SwagLabClassLib\\SwagLabClassLib.csproj"
               }
             }
           }

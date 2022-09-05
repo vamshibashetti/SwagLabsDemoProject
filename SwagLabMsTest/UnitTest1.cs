@@ -1,12 +1,4 @@
-using System.Data;
-using System.Runtime.InteropServices;
-using System.Net.Sockets;
-using System.Runtime.CompilerServices;
-using System.Reflection;
-using System.Net.Http.Headers;
-using System.Diagnostics.Tracing;
-using System.Dynamic;
-using System.ComponentModel;
+
 using System;
 using System.Diagnostics;
 using System.Runtime.ExceptionServices;
@@ -42,7 +34,7 @@ namespace SwagLabMsTest
             
         }
         [DataTestMethod]
-
+    
         [DataRow("standard_user","secret_sauce")]
         [DataRow("locked_out_user","secret_sauce")]
         [DataRow("problem_user","secret_sauce")]
@@ -55,7 +47,7 @@ namespace SwagLabMsTest
             log.loginbutton();
         }
         [TestMethod]
-        
+    
         public void productpage(){
             LogInPage log =new LogInPage(driver);
             log.username("standard_user");
@@ -72,11 +64,11 @@ namespace SwagLabMsTest
 
         }
         [DataTestMethod]
-        
+    
         [DataRow("standard_user","secret_sauce","vamshi","bashetti","500049")]
         public void EndtoEndScenario(string uname,string upassword,string fname,string lname,string pin){
            
-           LogInPage log =new LogInPage(driver);
+           SwagLabClassLib.LogInPage log =new SwagLabClassLib.LogInPage(driver);
            
            var productspage =log.loginMethod(uname,upassword);
            string actualtitle = productspage.productsTitleverify();
@@ -96,9 +88,8 @@ namespace SwagLabMsTest
 
         }
          [DataTestMethod]
-        
          [DataRow("locked_out_user","secret_sauce")]
-        public void lockeduserverify(string username,string password){
+        public void lockeduservalidation(string username,string password){
             LogInPage log =new LogInPage(driver);
             log.username(username);
             log.password(password);
@@ -110,7 +101,6 @@ namespace SwagLabMsTest
 
         }
          [DataTestMethod]
-        
          [DataRow("problem_user","secret_sauce")]
         public void Problemuser(string pname,string ppassword){
             LogInPage log =new LogInPage(driver);
@@ -125,16 +115,18 @@ namespace SwagLabMsTest
 
         }
 
+         
         [DataTestMethod]
-        
-        [DataRow("performance_glitch_user","secret_sauce","vamshi","bashetti","500049")]
-        public void performanceglitchuser(string uname,string upassword,string fname,string lname,string pin){
+    
+        [DataRow("standard_user","secret_sauce","vamshi","bashetti","500049")]
+        public void dropdown_Validation(string uname,string upassword,string fname,string lname,string pin){
            
            LogInPage log =new LogInPage(driver);
 
            var productspage =log.loginMethod(uname,upassword);
            string actualtitle = productspage.productsTitleverify();
            Assert.AreEqual("PRODUCTS",actualtitle,"product title not matched");
+              productspage.FiltersDropdown();
            
            var cartpage = productspage.navigatetocart();
            string actualitem = cartpage.SauceLabsBackpack();
@@ -144,6 +136,25 @@ namespace SwagLabMsTest
            var checkoutcomplete = checkoutpage.checkoutFinish(fname,lname,pin);
            checkoutcomplete.backtohomebtn();
            
+           productspage.menubtn();
+           productspage.logoutlink();
+        
+
+        }
+         [DataTestMethod]
+    
+        [DataRow("standard_user","secret_sauce","vamshi","bashetti","500049")]
+        public void Removingproducts_Validation(string uname,string upassword,string fname,string lname,string pin){
+           
+           LogInPage log =new LogInPage(driver);
+
+           var productspage =log.loginMethod(uname,upassword);
+           string actualtitle = productspage.productsTitleverify();
+           var cartpage = productspage.navigatetocart();
+           cartpage.RemoveItemsFromcart();       
+           var checkoutpage =cartpage.checkoutbtn();
+           var checkoutcomplete = checkoutpage.checkoutFinish(fname,lname,pin);
+           checkoutcomplete.backtohomebtn();
            productspage.menubtn();
            productspage.logoutlink();
         
