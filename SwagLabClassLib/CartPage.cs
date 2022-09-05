@@ -76,6 +76,11 @@ namespace SwagLabClassLib
           _RemoveBikeLight.Click();
           _RemoveBackpack.Click();
          }
+         public int numberofitemsincart()
+        {
+         int itemscount =_SelectedItemslist.Count();         
+          return itemscount;
+        }
   
         
     }

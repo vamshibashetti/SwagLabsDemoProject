@@ -1,4 +1,5 @@
 
+using System.Net.Http.Headers;
 using System;
 using System.Diagnostics;
 using System.Runtime.ExceptionServices;
@@ -34,6 +35,7 @@ namespace SwagLabMsTest
             
         }
         [DataTestMethod]
+        [Ignore]
     
         [DataRow("standard_user","secret_sauce")]
         [DataRow("locked_out_user","secret_sauce")]
@@ -47,7 +49,7 @@ namespace SwagLabMsTest
             log.loginbutton();
         }
         [TestMethod]
-    
+         [Ignore]
         public void productpage(){
             LogInPage log =new LogInPage(driver);
             log.username("standard_user");
@@ -64,7 +66,7 @@ namespace SwagLabMsTest
 
         }
         [DataTestMethod]
-    
+         [Ignore]
         [DataRow("standard_user","secret_sauce","vamshi","bashetti","500049")]
         public void EndtoEndScenario(string uname,string upassword,string fname,string lname,string pin){
            
@@ -88,6 +90,7 @@ namespace SwagLabMsTest
 
         }
          [DataTestMethod]
+          [Ignore]
          [DataRow("locked_out_user","secret_sauce")]
         public void lockeduservalidation(string username,string password){
             LogInPage log =new LogInPage(driver);
@@ -101,6 +104,7 @@ namespace SwagLabMsTest
 
         }
          [DataTestMethod]
+          [Ignore]
          [DataRow("problem_user","secret_sauce")]
         public void Problemuser(string pname,string ppassword){
             LogInPage log =new LogInPage(driver);
@@ -117,7 +121,7 @@ namespace SwagLabMsTest
 
          
         [DataTestMethod]
-    
+          [Ignore]
         [DataRow("standard_user","secret_sauce","vamshi","bashetti","500049")]
         public void dropdown_Validation(string uname,string upassword,string fname,string lname,string pin){
            
@@ -141,17 +145,23 @@ namespace SwagLabMsTest
         
 
         }
+        
          [DataTestMethod]
     
         [DataRow("standard_user","secret_sauce","vamshi","bashetti","500049")]
-        public void Removingproducts_Validation(string uname,string upassword,string fname,string lname,string pin){
+        public void Numberofitemsselected_Validation(string uname,string upassword,string fname,string lname,string pin){
            
            LogInPage log =new LogInPage(driver);
-
+          
            var productspage =log.loginMethod(uname,upassword);
            string actualtitle = productspage.productsTitleverify();
            var cartpage = productspage.navigatetocart();
-           cartpage.RemoveItemsFromcart();       
+           Thread.Sleep(5000);
+           cartpage.RemoveItemsFromcart(); 
+               Thread.Sleep(5000);
+           int actualitems = cartpage.numberofitemsincart();
+           int expecteditems = 2;
+           Assert.AreEqual(expecteditems,actualitems,"noof items doesnot match");     
            var checkoutpage =cartpage.checkoutbtn();
            var checkoutcomplete = checkoutpage.checkoutFinish(fname,lname,pin);
            checkoutcomplete.backtohomebtn();
