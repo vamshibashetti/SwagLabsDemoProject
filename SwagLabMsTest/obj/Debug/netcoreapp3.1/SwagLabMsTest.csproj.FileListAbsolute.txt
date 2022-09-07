@@ -198,3 +198,15 @@ C:\RootFolder1\SwagLabsDemoProject\SwagLabMsTest\obj\Debug\netcoreapp3.1\SwagLab
 C:\RootFolder1\SwagLabsDemoProject\SwagLabMsTest\obj\Debug\netcoreapp3.1\SwagLabMsTest.csproj.CoreCompileInputs.cache
 C:\RootFolder1\SwagLabsDemoProject\SwagLabMsTest\obj\Debug\netcoreapp3.1\SwagLabMsTest.csproj.CopyComplete
 C:\RootFolder1\SwagLabsDemoProject\SwagLabMsTest\obj\Debug\netcoreapp3.1\SwagLabMsTest.genruntimeconfig.cache
+C:\RootFolder1\SwagLabsDemoProject\SwagLabMsTest\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.dll
+C:\RootFolder1\SwagLabsDemoProject\SwagLabMsTest\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\RootFolder1\SwagLabsDemoProject\SwagLabMsTest\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.Binder.dll
+C:\RootFolder1\SwagLabsDemoProject\SwagLabMsTest\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.FileExtensions.dll
+C:\RootFolder1\SwagLabsDemoProject\SwagLabMsTest\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.Json.dll
+C:\RootFolder1\SwagLabsDemoProject\SwagLabMsTest\bin\Debug\netcoreapp3.1\Microsoft.Extensions.FileProviders.Abstractions.dll
+C:\RootFolder1\SwagLabsDemoProject\SwagLabMsTest\bin\Debug\netcoreapp3.1\Microsoft.Extensions.FileProviders.Physical.dll
+C:\RootFolder1\SwagLabsDemoProject\SwagLabMsTest\bin\Debug\netcoreapp3.1\Microsoft.Extensions.FileSystemGlobbing.dll
+C:\RootFolder1\SwagLabsDemoProject\SwagLabMsTest\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Primitives.dll
+C:\RootFolder1\SwagLabsDemoProject\SwagLabMsTest\bin\Debug\netcoreapp3.1\System.Runtime.CompilerServices.Unsafe.dll
+C:\RootFolder1\SwagLabsDemoProject\SwagLabMsTest\bin\Debug\netcoreapp3.1\System.Text.Encodings.Web.dll
+C:\RootFolder1\SwagLabsDemoProject\SwagLabMsTest\bin\Debug\netcoreapp3.1\System.Text.Json.dll

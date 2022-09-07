@@ -48,6 +48,14 @@
               "target": "Package",
               "version": "[3.11.0, )"
             },
+            "Microsoft.Extensions.Configuration.Binder": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            },
+            "Microsoft.Extensions.Configuration.Json": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            },
             "NETStandard.Library": {
               "suppressParent": "All",
               "target": "Package",
@@ -69,6 +77,10 @@
             "Selenium.WebDriver.ChromeDriver": {
               "target": "Package",
               "version": "[104.0.5112.7900, )"
+            },
+            "Selenium.WebDriver.MSEdgeDriver": {
+              "target": "Package",
+              "version": "[104.0.1293.70, )"
             },
             "coverlet.collector": {
               "target": "Package",

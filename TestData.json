@@ -1,0 +1,17 @@
+{
+    "ApplicationUnderTest":{
+      "Url":"https://www.saucedemo.com/",
+      "Browser":"chromeBrowser",
+      "username":"standard_user",
+      "password":"secret_sauce",
+      "FirstName":"vamshi",
+      "LastName":"Bashetti",
+      "Pincode":"500049"
+      
+     },
+    "ConnectionStrings":{
+      "URL":"https://www.saucedemo.com/",
+      
+     }
+  
+  }
