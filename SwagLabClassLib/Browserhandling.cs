@@ -29,7 +29,7 @@ namespace SwagLabClassLib
             {
                
                 driver = new FirefoxDriver(@"C:\Root Folder\WebDriver");
-                 return driver;
+            
             }
             else if (browser=="chrome")
             {     //this.driver =driver; 

@@ -1,7 +1,7 @@
 {
     "ApplicationUnderTest":{
       "Url":"https://www.saucedemo.com/",
-      "Browser":"chromeBrowser",
+      "Browser":"firefox",
       "username":"standard_user",
       "lockedoutuser":"locked_out_user",
       "problemuser":"problem_user",
