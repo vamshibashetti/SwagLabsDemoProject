@@ -78,9 +78,13 @@
               "target": "Package",
               "version": "[104.0.5112.7900, )"
             },
+            "Selenium.WebDriver.GeckoDriver": {
+              "target": "Package",
+              "version": "[0.31.0.1, )"
+            },
             "Selenium.WebDriver.MSEdgeDriver": {
               "target": "Package",
-              "version": "[104.0.1293.70, )"
+              "version": "[105.0.1343.27, )"
             },
             "coverlet.collector": {
               "target": "Package",

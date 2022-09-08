@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "8BVTlTWX5l38Dptq+s297imhGYf1CYNlHspbFAc4ugGw55TamBCkS+BACUgEaw3CAWjlLt+BTcIWv7AcOnKXNA==",
+  "dgSpecHash": "bTWtlYfS9LBDu3XVUsH4gfyCSuAKAVGuhEc+BWg2MqakMiUe5H7RXW45zsuQ+Ia3WRjo5Y/ZnTHuj2sKKZvUJg==",
   "success": true,
   "projectFilePath": "C:\\RootFolder1\\SwagLabsDemoProject\\SwagLabMsTest\\SwagLabMsTest.csproj",
   "expectedPackageFiles": [
@@ -49,7 +49,8 @@
     "C:\\Users\\E009074\\.nuget\\packages\\selenium.support\\4.4.0\\selenium.support.4.4.0.nupkg.sha512",
     "C:\\Users\\E009074\\.nuget\\packages\\selenium.webdriver\\4.4.0\\selenium.webdriver.4.4.0.nupkg.sha512",
     "C:\\Users\\E009074\\.nuget\\packages\\selenium.webdriver.chromedriver\\104.0.5112.7900\\selenium.webdriver.chromedriver.104.0.5112.7900.nupkg.sha512",
-    "C:\\Users\\E009074\\.nuget\\packages\\selenium.webdriver.msedgedriver\\104.0.1293.70\\selenium.webdriver.msedgedriver.104.0.1293.70.nupkg.sha512",
+    "C:\\Users\\E009074\\.nuget\\packages\\selenium.webdriver.geckodriver\\0.31.0.1\\selenium.webdriver.geckodriver.0.31.0.1.nupkg.sha512",
+    "C:\\Users\\E009074\\.nuget\\packages\\selenium.webdriver.msedgedriver\\105.0.1343.27\\selenium.webdriver.msedgedriver.105.0.1343.27.nupkg.sha512",
     "C:\\Users\\E009074\\.nuget\\packages\\system.appcontext\\4.3.0\\system.appcontext.4.3.0.nupkg.sha512",
     "C:\\Users\\E009074\\.nuget\\packages\\system.buffers\\4.3.0\\system.buffers.4.3.0.nupkg.sha512",
     "C:\\Users\\E009074\\.nuget\\packages\\system.collections\\4.3.0\\system.collections.4.3.0.nupkg.sha512",

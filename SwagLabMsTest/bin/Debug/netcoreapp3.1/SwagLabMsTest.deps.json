@@ -576,7 +576,8 @@
         }
       },
       "Selenium.WebDriver.ChromeDriver/104.0.5112.7900": {},
-      "Selenium.WebDriver.MSEdgeDriver/104.0.1293.70": {},
+      "Selenium.WebDriver.GeckoDriver/0.31.0.1": {},
+      "Selenium.WebDriver.MSEdgeDriver/105.0.1343.27": {},
       "System.AppContext/4.3.0": {
         "dependencies": {
           "System.Runtime": "4.3.0"
@@ -1203,7 +1204,8 @@
           "Selenium.Support": "4.4.0",
           "Selenium.WebDriver": "4.4.0",
           "Selenium.WebDriver.ChromeDriver": "104.0.5112.7900",
-          "Selenium.WebDriver.MSEdgeDriver": "104.0.1293.70",
+          "Selenium.WebDriver.GeckoDriver": "0.31.0.1",
+          "Selenium.WebDriver.MSEdgeDriver": "105.0.1343.27",
           "coverlet.collector": "1.2.0"
         },
         "runtime": {
@@ -1533,12 +1535,19 @@
       "path": "selenium.webdriver.chromedriver/104.0.5112.7900",
       "hashPath": "selenium.webdriver.chromedriver.104.0.5112.7900.nupkg.sha512"
     },
-    "Selenium.WebDriver.MSEdgeDriver/104.0.1293.70": {
+    "Selenium.WebDriver.GeckoDriver/0.31.0.1": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-GdCQb1IJk5rcz+GBFUiDXb9Xw8nJuNO8lFTNOU2LaG9yRX+c7d2OJXHcvuTXuvGMck4jdpEM9Bgif0CWmq9v5g==",
-      "path": "selenium.webdriver.msedgedriver/104.0.1293.70",
-      "hashPath": "selenium.webdriver.msedgedriver.104.0.1293.70.nupkg.sha512"
+      "sha512": "sha512-39nhn8qjgssE/Q/G23m+X9AiVcK71z8hRYmN3yeCVV9LZ9Y/E5s8eAwi6h52KLEnOxqcq23hsV4D4Hu2GYxRJQ==",
+      "path": "selenium.webdriver.geckodriver/0.31.0.1",
+      "hashPath": "selenium.webdriver.geckodriver.0.31.0.1.nupkg.sha512"
+    },
+    "Selenium.WebDriver.MSEdgeDriver/105.0.1343.27": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-0hCEhmRyJSu/r4UYVCY8bBoZsaAKI4IMsHMsctTysyYSVUQhi9frDXnSQwnc3/XE4UObnagkv+3p8/ErDBgoxw==",
+      "path": "selenium.webdriver.msedgedriver/105.0.1343.27",
+      "hashPath": "selenium.webdriver.msedgedriver.105.0.1343.27.nupkg.sha512"
     },
     "System.AppContext/4.3.0": {
       "type": "package",

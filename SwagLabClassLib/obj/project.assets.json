@@ -243,7 +243,13 @@
           "build/Selenium.WebDriver.ChromeDriver.targets": {}
         }
       },
-      "Selenium.WebDriver.MSEdgeDriver/104.0.1293.70": {
+      "Selenium.WebDriver.GeckoDriver/0.31.0.1": {
+        "type": "package",
+        "build": {
+          "build/Selenium.WebDriver.GeckoDriver.targets": {}
+        }
+      },
+      "Selenium.WebDriver.MSEdgeDriver/105.0.1343.27": {
         "type": "package",
         "build": {
           "build/Selenium.WebDriver.MSEdgeDriver.targets": {}
@@ -869,10 +875,30 @@
         "selenium.webdriver.chromedriver.nuspec"
       ]
     },
-    "Selenium.WebDriver.MSEdgeDriver/104.0.1293.70": {
-      "sha512": "GdCQb1IJk5rcz+GBFUiDXb9Xw8nJuNO8lFTNOU2LaG9yRX+c7d2OJXHcvuTXuvGMck4jdpEM9Bgif0CWmq9v5g==",
+    "Selenium.WebDriver.GeckoDriver/0.31.0.1": {
+      "sha512": "39nhn8qjgssE/Q/G23m+X9AiVcK71z8hRYmN3yeCVV9LZ9Y/E5s8eAwi6h52KLEnOxqcq23hsV4D4Hu2GYxRJQ==",
       "type": "package",
-      "path": "selenium.webdriver.msedgedriver/104.0.1293.70",
+      "path": "selenium.webdriver.geckodriver/0.31.0.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "README.md",
+        "build/DefinePropertiesGeckoDriver.targets",
+        "build/Selenium.WebDriver.GeckoDriver.targets",
+        "driver/linux64/geckodriver",
+        "driver/mac64/geckodriver",
+        "driver/mac64arm/geckodriver",
+        "driver/win32/geckodriver.exe",
+        "driver/win64/geckodriver.exe",
+        "nupkg-icon.png",
+        "selenium.webdriver.geckodriver.0.31.0.1.nupkg.sha512",
+        "selenium.webdriver.geckodriver.nuspec"
+      ]
+    },
+    "Selenium.WebDriver.MSEdgeDriver/105.0.1343.27": {
+      "sha512": "0hCEhmRyJSu/r4UYVCY8bBoZsaAKI4IMsHMsctTysyYSVUQhi9frDXnSQwnc3/XE4UObnagkv+3p8/ErDBgoxw==",
+      "type": "package",
+      "path": "selenium.webdriver.msedgedriver/105.0.1343.27",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -883,7 +909,7 @@
         "driver/win32/msedgedriver.exe",
         "driver/win64/msedgedriver.exe",
         "license/license.txt",
-        "selenium.webdriver.msedgedriver.104.0.1293.70.nupkg.sha512",
+        "selenium.webdriver.msedgedriver.105.0.1343.27.nupkg.sha512",
         "selenium.webdriver.msedgedriver.nuspec"
       ]
     },
@@ -1144,7 +1170,8 @@
       "Selenium.Support >= 4.4.0",
       "Selenium.WebDriver >= 4.4.0",
       "Selenium.WebDriver.ChromeDriver >= 104.0.5112.7900",
-      "Selenium.WebDriver.MSEdgeDriver >= 104.0.1293.70",
+      "Selenium.WebDriver.GeckoDriver >= 0.31.0.1",
+      "Selenium.WebDriver.MSEdgeDriver >= 105.0.1343.27",
       "coverlet.collector >= 1.2.0"
     ]
   },
@@ -1225,9 +1252,13 @@
             "target": "Package",
             "version": "[104.0.5112.7900, )"
           },
+          "Selenium.WebDriver.GeckoDriver": {
+            "target": "Package",
+            "version": "[0.31.0.1, )"
+          },
           "Selenium.WebDriver.MSEdgeDriver": {
             "target": "Package",
-            "version": "[104.0.1293.70, )"
+            "version": "[105.0.1343.27, )"
           },
           "coverlet.collector": {
             "target": "Package",

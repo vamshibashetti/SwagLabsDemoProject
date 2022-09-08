@@ -29,13 +29,20 @@ namespace SwagLabMsTest
     {
       
         IWebDriver driver;
+        Browserhandling browser;
        
         [TestInitialize]
         public void setup()
 
         {
-            driver = new ChromeDriver(@"C:\Root Folder\WebDriver");
-           // SwagLabClassLib.Constants.InitConstants();
+           
+        Browserhandling objbrowser = new Browserhandling(driver);
+         driver= objbrowser.Browser("firefox");
+   
+
+
+            //driver = new ChromeDriver(@"C:\Root Folder\WebDriver");
+            //  SwagLabClassLib.Constants.InitConstants();
             driver.Navigate().GoToUrl(SwagLabClassLib.Constants.SwagUrl);
             driver.Manage().Window.Maximize();
             driver.Manage().Timeouts().ImplicitWait = System.TimeSpan.FromSeconds(10);
@@ -83,6 +90,7 @@ namespace SwagLabMsTest
 
         }
         [TestMethod]
+        [Ignore]
         public void EndtoEndScenario(){
            
            SwagLabClassLib.LogInPage log =new SwagLabClassLib.LogInPage(driver);
@@ -104,13 +112,12 @@ namespace SwagLabMsTest
         
 
         }
-         [DataTestMethod]
+         [TestMethod]
          [Ignore]
-         [DataRow("locked_out_user","secret_sauce")]
-        public void Loginwithlockeduser(string username,string password){
+        public void Loginwithlockeduser(){
             SwagLabClassLib.LogInPage log =new SwagLabClassLib.LogInPage(driver);
-            log.username(username);
-            log.password(password);
+            log.username(SwagLabClassLib.Constants.lockedoutuser);
+            log.password(SwagLabClassLib.Constants.password);
             log.loginbutton();
             string actuallockedoutmsg ="Epic sadface: Sorry, this user has been locked out.";
             string expectedlockedoutmsg =log.lockedusermsg();
@@ -118,12 +125,10 @@ namespace SwagLabMsTest
 
 
         }
-         [DataTestMethod]
-         [Ignore]
-         [DataRow("problem_user","secret_sauce")]
-        public void Problemuser(string pname,string ppassword){
+         [TestMethod]
+        public void Problemuser(){
             SwagLabClassLib.LogInPage log =new SwagLabClassLib.LogInPage(driver);
-            var productspage =log.loginMethod(pname,ppassword);
+            var productspage =log.loginMethod(SwagLabClassLib.Constants.problemuser,SwagLabClassLib.Constants.password);
           
            string actualbackpackimg =productspage.probuserbackpackimage();
 
@@ -136,6 +141,7 @@ namespace SwagLabMsTest
 
          
         [TestMethod]
+        [Ignore]
         public void dropdownValidation(){
            
            SwagLabClassLib.LogInPage log =new SwagLabClassLib.LogInPage(driver);
@@ -159,14 +165,13 @@ namespace SwagLabMsTest
 
         }
         
-         [DataTestMethod]
+         [TestMethod]
          [Ignore]
-        [DataRow("standard_user","secret_sauce","vamshi","bashetti","500049")]
-        public void NumberofitemsselectedValidation(string uname,string upassword,string fname,string lname,string pin){
+        public void NumberofitemsselectedValidation(){
            
            SwagLabClassLib.LogInPage log =new SwagLabClassLib.LogInPage(driver);
           
-           var productspage =log.loginMethod(uname,upassword);
+           var productspage =log.loginMethod(SwagLabClassLib.Constants.username,SwagLabClassLib.Constants.password);
            string actualtitle = productspage.productsTitleverify();
            var cartpage = productspage.navigatetocart();
         
@@ -176,7 +181,7 @@ namespace SwagLabMsTest
            int expecteditems = 2;
            Assert.AreEqual(expecteditems,actualitems,"noof items doesnot match");     
            var checkoutpage =cartpage.checkoutbtn();
-           var checkoutcomplete = checkoutpage.checkoutFinish(fname,lname,pin);
+           var checkoutcomplete = checkoutpage.checkoutFinish(SwagLabClassLib.Constants.Firstname,SwagLabClassLib.Constants.Lastname,SwagLabClassLib.Constants.Pincode);
            checkoutcomplete.backtohomebtn();
            productspage.menubtn();
            productspage.logoutlink();
@@ -184,17 +189,15 @@ namespace SwagLabMsTest
 
         }
         
-         [DataTestMethod]
+         [TestMethod]
          [Ignore]
-    
-        [DataRow("standard_user","secret_sauce","vamshi","bashetti","500049")]
-        public void verifyingPagesTitle(string uname,string upassword,string fname,string lname,string pin){
+        public void verifyingPagesTitle(){
            
            SwagLabClassLib.LogInPage log =new SwagLabClassLib.LogInPage(driver);
            string actualoginltitle = log.getPageTitle();
            string expectedlogintitle="Swag Labs";
            Assert.AreEqual(expectedlogintitle,actualoginltitle,"title doesnot match");
-           var productspage =log.loginMethod(uname,upassword);
+           var productspage =log.loginMethod(SwagLabClassLib.Constants.username,SwagLabClassLib.Constants.password);
            string actualtitle = productspage.productsTitleverify();
            string expectedtitle="PRODUCTS";
            Assert.AreEqual(expectedtitle,actualtitle,"title doesnot match");
@@ -205,7 +208,7 @@ namespace SwagLabMsTest
            string expectedctitle="YOUR CART";
            Assert.AreEqual(expectedctitle,actualctitle,"title doesnot match");
            var checkoutpage =cartpage.checkoutbtn();
-           var checkoutcomplete = checkoutpage.checkoutFinish(fname,lname,pin);
+           var checkoutcomplete = checkoutpage.checkoutFinish(SwagLabClassLib.Constants.Firstname,SwagLabClassLib.Constants.Lastname,SwagLabClassLib.Constants.Pincode);
            checkoutcomplete.backtohomebtn();
            productspage.menubtn();
            productspage.logoutlink();

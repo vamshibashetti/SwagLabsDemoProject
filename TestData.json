@@ -3,6 +3,9 @@
       "Url":"https://www.saucedemo.com/",
       "Browser":"chromeBrowser",
       "username":"standard_user",
+      "lockedoutuser":"locked_out_user",
+      "problemuser":"problem_user",
+      "performanceglitchuser":"performance_glitch_user",
       "password":"secret_sauce",
       "FirstName":"vamshi",
       "LastName":"Bashetti",
@@ -10,7 +13,7 @@
       
      },
     "ConnectionStrings":{
-      "URL":"https://www.saucedemo.com/",
+      "URL":"https://www.saucedemo.com/"
       
      }
   

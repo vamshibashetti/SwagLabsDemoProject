@@ -15,6 +15,9 @@ namespace SwagLabClassLib
         public static string Firstname;
         public static string Lastname;
         public static string Pincode;
+        public static string lockedoutuser;
+        public static string problemuser;
+        public static string performanceglitchuser;
 
         static Constants(){
 
@@ -29,7 +32,9 @@ namespace SwagLabClassLib
        Firstname = configuration.GetSection ("ApplicationUnderTest:FirstName").Value;
        Lastname = configuration.GetSection ("ApplicationUnderTest:LastName").Value;
        Pincode = configuration.GetSection ("ApplicationUnderTest:Pincode").Value;
-
+       lockedoutuser =configuration.GetSection ("ApplicationUnderTest:lockedoutuser").Value;
+       problemuser=configuration.GetSection ("ApplicationUnderTest:problemuser").Value;
+       performanceglitchuser=configuration.GetSection ("ApplicationUnderTest:performanceglitchuser").Value;
         
        
         

@@ -11,8 +11,9 @@
     <PackageReference Include="DotNetSeleniumExtras.WaitHelpers" Version="3.11.0"/>
     <PackageReference Include="DotNetSeleniumExtras.PageObjects" Version="3.11.0"/>
     <PackageReference Include="DotNetSeleniumExtras.PageObjects.Core" Version="4.3.0"/>
-    <PackageReference Include="Selenium.WebDriver.MSEdgeDriver" Version="104.0.1293.70"/>
+    <PackageReference Include="Selenium.WebDriver.MSEdgeDriver" Version="105.0.1343.27"/>
     <PackageReference Include="Microsoft.Extensions.Configuration.Json" Version="6.0.0"/>
     <PackageReference Include="Microsoft.Extensions.Configuration.Binder" Version="6.0.0"/>
+    <PackageReference Include="Selenium.WebDriver.GeckoDriver" Version="0.31.0.1"/>
   </ItemGroup>
 </Project>
