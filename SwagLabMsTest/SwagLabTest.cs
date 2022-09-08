@@ -1,14 +1,8 @@
 
-using System.Net.NetworkInformation;
-using System.Runtime.Serialization;
-using System.Linq.Expressions;
-using Microsoft.VisualBasic;
-using System.Net.Http.Headers;
 using System;
 using SwagLabClassLib;
 using System.Diagnostics;
-using System.Runtime.ExceptionServices;
-using System.ComponentModel.Design;
+
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using OpenQA.Selenium;
 using System.Threading;
@@ -36,13 +30,8 @@ namespace SwagLabMsTest
 
         {
            
-        Browserhandling objbrowser = new Browserhandling(driver);
-         driver= objbrowser.Browser("firefox");
-   
-
-
-            //driver = new ChromeDriver(@"C:\Root Folder\WebDriver");
-            //  SwagLabClassLib.Constants.InitConstants();
+            Browserhandling objbrowser = new Browserhandling(driver);
+            driver= objbrowser.Browser(SwagLabClassLib.Constants.Browser);
             driver.Navigate().GoToUrl(SwagLabClassLib.Constants.SwagUrl);
             driver.Manage().Window.Maximize();
             driver.Manage().Timeouts().ImplicitWait = System.TimeSpan.FromSeconds(10);
@@ -50,7 +39,7 @@ namespace SwagLabMsTest
             
         }
         [DataTestMethod]
-        [Ignore]
+        
         [DataRow("standard_user","secret_sauce")]
         [DataRow("locked_out_user","secret_sauce")]
         [DataRow("problem_user","secret_sauce")]
@@ -90,7 +79,7 @@ namespace SwagLabMsTest
 
         }
         [TestMethod]
-        [Ignore]
+        
         public void EndtoEndScenario(){
            
            SwagLabClassLib.LogInPage log =new SwagLabClassLib.LogInPage(driver);
@@ -113,7 +102,7 @@ namespace SwagLabMsTest
 
         }
          [TestMethod]
-         [Ignore]
+        
         public void Loginwithlockeduser(){
             SwagLabClassLib.LogInPage log =new SwagLabClassLib.LogInPage(driver);
             log.username(SwagLabClassLib.Constants.lockedoutuser);
@@ -141,7 +130,7 @@ namespace SwagLabMsTest
 
          
         [TestMethod]
-        [Ignore]
+    
         public void dropdownValidation(){
            
            SwagLabClassLib.LogInPage log =new SwagLabClassLib.LogInPage(driver);
@@ -166,7 +155,7 @@ namespace SwagLabMsTest
         }
         
          [TestMethod]
-         [Ignore]
+    
         public void NumberofitemsselectedValidation(){
            
            SwagLabClassLib.LogInPage log =new SwagLabClassLib.LogInPage(driver);
@@ -190,7 +179,7 @@ namespace SwagLabMsTest
         }
         
          [TestMethod]
-         [Ignore]
+    
         public void verifyingPagesTitle(){
            
            SwagLabClassLib.LogInPage log =new SwagLabClassLib.LogInPage(driver);
